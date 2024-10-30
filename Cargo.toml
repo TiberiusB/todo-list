@@ -1,0 +1,14 @@
+[package]
+name = "todo-list"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5", features = [
+    "derive",
+] } # command line interface, qui est le UI de ce programme.
+chrono = "0.4.38" # gestion du temps.
+serde = { version = "1.0", features = [
+    "derive",
+] } # permet de serialiser ou deserialiser des donnees, passer d'un format de donnees a un autre.
+serde_json = "1.0" # sous-librarie de serd pour manipular le jsan
